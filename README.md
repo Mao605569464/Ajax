@@ -8,11 +8,11 @@
 提高网页加载速度，从而缩短用户等待时间，改善用户体验。  
 
 ## 2、Ajax的工作原理
-  1）JavaScript
-  2）一步数据获取技术XMLHttpRequest
-  3）XML
-  4）DOM
-  5）XHTML和CSS
+1）JavaScript
+2）一步数据获取技术XMLHttpRequest
+3）XML
+4）DOM
+5）XHTML和CSS
 ## 3、常见案例
    电商网站我们可以动态更新购物车总数 
    微博社区的点赞按钮
