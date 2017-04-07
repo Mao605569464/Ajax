@@ -14,13 +14,12 @@
 4）DOM  
 5）XHTML和CSS  
 ## 3、常见案例
-   电商网站我们可以动态更新购物车总数 
-   微博社区的点赞按钮
+   电商网站我们可以动态更新购物车总数  
+   微博社区的点赞按钮  
 ## 4、Http 请求
-   创建XMLHttpRequest 对象
-   我们可以用构造函数的方式，
-   直接new的方式
-
+   创建XMLHttpRequest 对象  
+   我们可以用构造函数的方式，  
+   直接new的方式  
 ```javascript
 request = new XMLHttpRequest();
 ```
@@ -38,18 +37,16 @@ xmlhttp  = new ActiveXObject("Msxml2.XMLHTTP");
 ```javascript
 xmlhttp  =  new ActiveXObject("Microsoft.XMLHTTP");
 ```
-
-- 如果这三种方式都不能创建我们的这个对象，
-- 那么就说明用户使用的这款浏览器已经过时了，
-- 我们可以提示他浏览器不支持Ajax。 
-- 好，我们创建的这个对象，
-- 首先它必须允许在一个web服务器上的一个网页中，
-- 因为它依赖JavaScript，JavaScript必须在网页中才能执行。
-- **注意：**
-- 我们一定要注意这个网页的编码格式，
-- 不然通过异步获取的这些数据有可能是乱码。
-- 代码示 例：
-
+如果这三种方式都不能创建我们的这个对象，  
+那么就说明用户使用的这款浏览器已经过时了，  
+我们可以提示他浏览器不支持Ajax。   
+好，我们创建的这个对象，  
+首先它必须允许在一个web服务器上的一个网页中，  
+因为它依赖JavaScript，JavaScript必须在网页中才能执行。  
+**注意：**  
+我们一定要注意这个网页的编码格式，  
+不然通过异步获取的这些数据有可能是乱码。  
+代码示例：  
 ```html
 <!DOCTYPE html>
 <html lang="en">
