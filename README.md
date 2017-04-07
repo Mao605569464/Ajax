@@ -21,7 +21,7 @@
 -    我们可以用构造函数的方式，
 -    直接new的方式
 
-```
+```javascript
 request = new XMLHttpRequest();
 ```
 
