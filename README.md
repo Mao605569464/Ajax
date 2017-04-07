@@ -24,9 +24,9 @@
 request = new XMLHttpRequest();
 ```
 
-- 但是这个语句只能针对firefox，safari，
-- opera以及chrome等高级浏览器
-- 如果我们要针对IE6或者IE6以上的我们就要换一种方式，
+但是这个语句只能针对firefox，safari，  
+opera以及chrome等高级浏览器  
+如果我们要针对IE6或者IE6以上的我们就要换一种方式，  
 
 ```javascript
 xmlhttp  = new ActiveXObject("Msxml2.XMLHTTP");
@@ -116,11 +116,11 @@ alert(request.responseText);
 这样我们就把服务器返回的数据，alert出来了  
 这就是我们这个对象的三个属性，但是我们要把请求发送到服务器，  
 那我们就要调用它的两个方法：
-***1、open()*** 
+*** 1、open() ***  
 1）GET/POST ，表明这个http方法  
 2）URL规定服务器端脚本的URL  
 3）异步处理的标志： 规定应当对请求进行异步的处理  
-***2、send()*** 
+*** 2、send() ***  
 可以将请求发送到服务器端。  
 我们假设当前这个网页跟我们请求的URL在同一个目录下面，  
 那么我们的代码可以是这样的：   
