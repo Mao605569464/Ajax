@@ -29,13 +29,13 @@ request = new XMLHttpRequest();
 - opera以及chrome等高级浏览器
 - 如果我们要针对IE6或者IE6以上的我们就要换一种方式，
 
-```
+```javascript
 xmlhttp  = new ActiveXObject("Msxml2.XMLHTTP");
 ```
 
 - 假如这样创建还不成功，那我们就要换一种方式。
 
-```
+```javascript
 xmlhttp  =  new ActiveXObject("Microsoft.XMLHTTP");
 ```
 
@@ -50,7 +50,7 @@ xmlhttp  =  new ActiveXObject("Microsoft.XMLHTTP");
 - 不然通过异步获取的这些数据有可能是乱码。
 - 代码示 例：
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -96,7 +96,7 @@ xmlhttp  =  new ActiveXObject("Microsoft.XMLHTTP");
 -  必须添加if语句，才能判断是否完成响应，
 -  意味着是否可以获取异步的数据。
 r
-```
+```javascript
 equest.onreadtstate = function(){
     //这里要写if语句
     if(request.readyState == 4 ){
@@ -109,7 +109,7 @@ equest.onreadtstate = function(){
 -  用来获取服务器返回的数据
 - 例如，我们把它打印出来
 
-```
+```javascript
 request.onreadtstate = function(){
     //这里要写if语句
     if(request.readyState == 4 ){
@@ -132,7 +132,7 @@ alert(request.responseText);
 - 我们假设当前这个网页跟我们请求的URL在同一个目录下面，
 - **那么我们的代码可以是这样的**
 
-```
+```javascript
 request.open("GET","test.txt",true);
 request.onreadtstate = function(){
     //这里要写if语句
