@@ -1,6 +1,6 @@
-<center> 
-#  学习Ajax
-</center >
+<center style=“color:red”>
+学习Ajax
+</center>
 ## 1、Ajax概述
 - **Ajax**的全称是XAsynchronous JavaScript and ML，   
 - 中文定义为：“异步JavaScript和XML”。  
