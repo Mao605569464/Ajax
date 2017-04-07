@@ -1,4 +1,4 @@
-#   Ajax概述
+#   1、Ajax概述
 >   Ajax的全称是Asynchronous JavaScript and XML ，
 >   中文定义为：“异步JavaScript和XML”。
 >   Web2.0技术的核心
