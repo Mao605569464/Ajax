@@ -124,7 +124,7 @@ alert(request.responseText);
 **2、send()** 
 可以将请求发送到服务器端。  
 我们假设当前这个网页跟我们请求的URL在同一个目录下面，  
-那么我们的代码可以是这样的：  
+那么我们的代码可以是这样的：   
 ```javascript
 request.open("GET","test.txt",true);
 request.onreadtstate = function(){
