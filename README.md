@@ -101,11 +101,9 @@ request.onreadtstate = function(){
     //在里面我们就可以写一些从服务器获取数据的代码，并做相应处理。
 }
 ```
-
-- 3）responseText 属性
--  用来获取服务器返回的数据
-- 例如，我们把它打印出来
-
+**3）responseText 属性** 
+用来获取服务器返回的数据  
+例如，我们把它打印出来
 ```javascript
 request.onreadtstate = function(){
     //这里要写if语句
@@ -115,20 +113,18 @@ request.onreadtstate = function(){
 alert(request.responseText);
 }
 ```
-
-- 这样我们就把服务器返回的数据，alert出来了
--   这就是我们这个对象的三个属性，但是我们要把请求发送到服务器，
-- 那我们就要调用它的两个方法：
--  1、open()
--  它有几个参数
-- 1）GET/POST ，表明这个http方法
-- 2）URL规定服务器端脚本的URL
-- 3）异步处理的标志： 规定应当对请求进行异步的处理
--  2、send() 
-- 可以将请求发送到服务器端。
-- 我们假设当前这个网页跟我们请求的URL在同一个目录下面，
-- **那么我们的代码可以是这样的**
-
+这样我们就把服务器返回的数据，alert出来了  
+这就是我们这个对象的三个属性，但是我们要把请求发送到服务器，  
+那我们就要调用它的两个方法：
+**1、open()**
+它有几个参数  
+1）GET/POST ，表明这个http方法  
+2）URL规定服务器端脚本的URL  
+3）异步处理的标志： 规定应当对请求进行异步的处理  
+**2、send()** 
+可以将请求发送到服务器端。  
+我们假设当前这个网页跟我们请求的URL在同一个目录下面，  
+那么我们的代码可以是这样的：  
 ```javascript
 request.open("GET","test.txt",true);
 request.onreadtstate = function(){
