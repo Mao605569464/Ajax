@@ -32,7 +32,7 @@ opera以及chrome等高级浏览器
 xmlhttp  = new ActiveXObject("Msxml2.XMLHTTP");
 ```
 
-- 假如这样创建还不成功，那我们就要换一种方式。
+假如这样创建还不成功，那我们就要换一种方式。
 
 ```javascript
 xmlhttp  =  new ActiveXObject("Microsoft.XMLHTTP");
