@@ -77,4 +77,69 @@ xmlhttp  =  new ActiveXObject("Microsoft.XMLHTTP");
 </body>
 </html>
 ```
+- 我们在向服务器发送数据之前，我们有必要了解下多一项的属性。
+- 请求服务器有三个比较重要的属性。
+- 1）onreadystatechange 属性
+- 作用：
+- 存储、处理服务器响应的函数
+- 2）readyState 属性
+-  作用：
+- 用来存储服务器响应的状态信息 
+-  值：
+- 0:表示请求还未初始化，也就是没有发起请求
+- 1:表示请求已经提出，在请求发出去之前
+- 2:表示请求已经发送，这里通常可以通过响应得到头部信息
+- 3:表示服务器正在处理中，但是没有响应完成
+- 4:表示服务器已经请求完成，并且使用它
+-  这个readyState 值针对的这些状态，我们都要调用	
+-  onreadystatechange 对应的函数，我们必须在这个函数里，
+-  必须添加if语句，才能判断是否完成响应，
+-  意味着是否可以获取异步的数据。
+r
+```
+equest.onreadtstate = function(){
+    //这里要写if语句
+    if(request.readyState == 4 ){
+    //那说明我们的服务器已经处理完成
+    //在里面我们就可以写一些从服务器获取数据的代码，并做相应处理。
+}
+```
 
+- 3）responseText 属性
+-  用来获取服务器返回的数据
+- 例如，我们把它打印出来
+
+```
+request.onreadtstate = function(){
+    //这里要写if语句
+    if(request.readyState == 4 ){
+    //那说明我们的服务器已经处理完成
+    //在里面我们就可以写一些从服务器获取数据的代码，并做相应处理。
+alert(request.responseText);
+}
+```
+
+- 这样我们就把服务器返回的数据，alert出来了
+-   这就是我们这个对象的三个属性，但是我们要把请求发送到服务器，
+- 那我们就要调用它的两个方法：
+-  1、open()
+-  它有几个参数
+- 1）GET/POST ，表明这个http方法
+- 2）URL规定服务器端脚本的URL
+- 3）异步处理的标志： 规定应当对请求进行异步的处理
+-  2、send() 
+- 可以将请求发送到服务器端。
+- 我们假设当前这个网页跟我们请求的URL在同一个目录下面，
+- **那么我们的代码可以是这样的**
+
+```
+request.open("GET","test.txt",true);
+request.onreadtstate = function(){
+    //这里要写if语句
+    if(request.readyState == 4 ){
+    //那说明我们的服务器已经处理完成
+    //在里面我们就可以写一些从服务器获取数据的代码，并做相应处理。
+    alert(request.responseText);
+}
+request.send(null);
+```
