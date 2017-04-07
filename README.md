@@ -97,7 +97,7 @@ xmlhttp  =  new ActiveXObject("Microsoft.XMLHTTP");
 -  意味着是否可以获取异步的数据。
 r
 ```javascript
-equest.onreadtstate = function(){
+request.onreadtstate = function(){
     //这里要写if语句
     if(request.readyState == 4 ){
     //那说明我们的服务器已经处理完成
